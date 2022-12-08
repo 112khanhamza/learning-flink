@@ -1,4 +1,9 @@
 # Learning Flink
+Directory Setup - Create the below directories
+
+ - data/raw_audit_trail
+ - data/five_sec_summary
+
 How to Setup Kafka? - run the below commands
 
  - brew install kafka
