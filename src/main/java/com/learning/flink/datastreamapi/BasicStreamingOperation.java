@@ -9,6 +9,7 @@ import org.apache.flink.api.common.serialization.SimpleStringEncoder;
 import org.apache.flink.api.common.typeinfo.Types;
 import org.apache.flink.api.java.io.TextInputFormat;
 import org.apache.flink.api.java.tuple.Tuple2;
+import org.apache.flink.configuration.Configuration;
 import org.apache.flink.core.fs.Path;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -28,7 +29,9 @@ public class BasicStreamingOperation {
              ***********************************************************************/
 
             // Setup Flink Environment
-            final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+            Configuration conf = new Configuration();
+            final StreamExecutionEnvironment env = StreamExecutionEnvironment.createLocalEnvironmentWithWebUI(conf);
+//            final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
             // Keeps the ordering of records. Else multiple threads can change sequence of printing.
             env.setParallelism(1);
