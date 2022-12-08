@@ -1,3 +1,2 @@
 .idea/
-data/raw_audit_trail/
-data/five_sec_summary/
+csv*
