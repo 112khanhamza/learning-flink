@@ -1,5 +1,5 @@
 # Learning Flink
-How to Setup Kafka - run the below commands
+How to Setup Kafka? - run the below commands
 
  - brew install kafka
  - brew services start zookeeper
