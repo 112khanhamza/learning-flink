@@ -113,7 +113,7 @@ public class StreamSplitAndCombine {
 
                 @Override
                 public Tuple3<String, Integer, Integer> map(Tuple3<String, String, Integer> user) throws Exception {
-                    System.out.println("--- Mergrd Record for User: " + user);
+                    System.out.println("--- Merged Record for User: " + user);
                     return null;
                 }
             });
