@@ -51,7 +51,8 @@ public class StreamSplitAndCombine {
              ***************************************************************/
 
             // Create a Separate Trail for the Sales Rep operation
-            final OutputTag<Tuple2<String, Integer>> salesRepTag = new OutputTag<Tuple2<String, Integer>>("sales-rep"){};
+            final OutputTag<Tuple2<String, Integer>> salesRepTag =
+                    new OutputTag<Tuple2<String, Integer>>("sales-rep"){};
 
             // Convert each record into an Object
             SingleOutputStreamOperator<AuditTrail> customerTrail = auditTrailStr.process(new ProcessFunction<String, AuditTrail>() {

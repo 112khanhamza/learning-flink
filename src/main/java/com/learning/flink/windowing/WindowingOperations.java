@@ -114,7 +114,6 @@ public class WindowingOperations {
                                     Math.max(x.f3, y.f3)
                             ));
 
-
             // Pretty print the tuples
             sessionSummary.map(new MapFunction<Tuple4<String, Integer, Long, Long>, Object>() {
                 @Override
