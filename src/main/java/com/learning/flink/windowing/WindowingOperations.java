@@ -123,7 +123,7 @@ public class WindowingOperations {
                     String minTime = format.format(new Date(Long.valueOf(slidingSummary.f2)));
                     String maxTime = format.format(new Date(Long.valueOf(slidingSummary.f3)));
 
-                    System.out.println("Sliding Summary : "
+                    System.out.println("Session Summary : "
                     + (new Date()).toString()
                     + " User : " + slidingSummary.f0
                     + " Start Time : " + minTime
